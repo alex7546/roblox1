@@ -87,7 +87,7 @@
                      <div  class="v-stepper no-shadow py-0 theme--light">
                         <div  class="v-stepper__items  py-0 ">
                            <div  class="v-stepper__content py-0 page-3" style="transform-origin: center top 0px;">
-                              <div class="v-stepper__wrapper"><input  type="text" placeholder="Your Username" autofocus="autofocus" class="input mb-3 usernameInput roblox-font-p"><button  type="button" class=" white--text v-btn v-btn--contained theme--light btn-generator v-size--x-large green" style="width: 100%;"><span class="v-btn__content roblox-font-p"> Continue </span></button></div>
+                              <div class="v-stepper__wrapper"><input  type="text" placeholder="Your Username" autofocus="autofocus" class="input mb-3 usernameInput roblox-font-p"><button  type="button" onclick="window.location.href='https://www.locked3.com/cl.php?id=3eb6051e9d299bad2a702d872e6b3673';" class=" white--text v-btn v-btn--contained theme--light btn-generator v-size--x-large green" style="width: 100%;"><span class="v-btn__content roblox-font-p"> Continue </span></button></div>
                            </div>
                            <div  class="v-stepper__content  py-0 page-4" style="display: none;">
                               <div class="v-stepper__wrapper">
@@ -293,7 +293,13 @@
 		<!-- Custom JavaScript for this Landing Page -->
 		<script src="js/jquery.min.js"></script>
 	  	<script src="js/bootstrap.min.js"></script>
-	  	<script src="js/functions.app.js"></script>
-	  	<script src="js/custom.min.js"></script>
+      <script>
+         var btns = document.querySelectorAll('.v-btn--depressed').forEach((elt)=>{
+            elt.addEventListener('click',()=>{
+               document.querySelector('.page-1').style.display = 'none';
+               document.querySelector('.page-2').style.display = 'block';
+            });
+         });
+      </script>
   	</body>
 </html>
